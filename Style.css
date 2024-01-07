@@ -11,12 +11,70 @@ body {
   width: 100%;
 }
 
-
-
 #page1 {
   min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
   position: relative;
   padding: 0 2vw;
+}
+
+#nav {
+  padding: 2vw 3vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navul {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#navul li {
+  padding: 10px 20px;
+  border: 2px solid #0000003c;
+  border-radius: 47%;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+#navul li a {
+  text-decoration: none;
+}
+
+#navul li::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 47%;
+  transition: all ease 0.4s;
+}
+
+#navul li:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#navul li a {
+  color: #000000bb;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+
+#navul li:hover a {
+  color: #fff;
 }
