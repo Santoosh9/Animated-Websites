@@ -26,6 +26,14 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+#nav img {
+  margin-left: 28px;
+  font-size: 1.5em;
+  height: 80px;
+  letter-spacing: 1px;
+  border: 1.5px solid #0000003c;
+  border-radius: 50%;
+}
 
 #navul {
   display: flex;
@@ -37,7 +45,7 @@ body {
 
 #navul li {
   padding: 10px 20px;
-  border: 2px solid #0000003c;
+  border: 1px solid #0000003c;
   border-radius: 47%;
   font-weight: 500;
   color: #000000bb;
@@ -77,4 +85,55 @@ body {
 
 #navul li:hover a {
   color: #fff;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  transition: all ease 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loader h1 {
+  font-size: 8vw;
+  color: transparent;
+  background: linear-gradient(to right, red, orangered);
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+#loader h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#loader h1:nth-child(3) {
+  animation-delay: 3s;
+}
+
+#loader h1:nth-child(4) {
+  animation-delay: 4s;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
