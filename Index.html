@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio-Fm</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 
 </head>
+
 <body>
-    
+
     <div id="loader">
         <h1>Music</h1>
         <h1>News</h1>
         <h1>Business</h1>
-      
     </div>
-    <div id="fixed-image">
-    
-    </div>
-   <div id="main">
 
-<div id="page1">
-    <div id="nav">
-    
-
+    <div id="main">
+        <div id="page1">
+        <div id="nav">
             <img src="/images/logo.png" alt="logo img">
             <ul id="navul">
                 <li><a href="Index.html">Home</a></li>
-                <li id="program"><a href="Ourprograms.html">Programs
-    
-    
-                        <ul id="dropdown">
-                            <li id="news"><a  href="News.html">News</a></li>
-                            <li><a href="Music.html"><span>Music</span> </a>
-                                <ul id="sub-dropdown">
-                                    <li><a href="#">old</a></li>
-                                    <li><a href="#">new</a></li>
-    
-                                </ul>
-                            </li>
-                            <li><a href="Live.html">Live Programs</a></li>
-    
-                        </ul>
-    
-    
+                <li class="dropdown" id="programsDropdown">
+                    <a href="Ourprograms.html">Programs</a>
+                    <!-- <ul class="dropdown-content">
+                        <li><a href="News.html">News</a></li>
+                        <li class="dropdown" id="musicDropdown">
+                            <a href="Music.html"><span>Music</span></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Old</a></li>
+                                <li><a href="#">New</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Live.html">Live Programs</a></li>
+                    </ul> -->
                 </li>
                 <li><a href="Event.html">Events</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-    
             </ul>
-    
+        </div>
+
+        <div id="video-carousel" class="carousel">
+            <div class="carousel-item">
+                <video autoplay muted loop class="carousel-video">
+                    <source src="/videos/2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop class="carousel-video">
+                    <source src="/videos/3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop class="carousel-video">
+                    <source src="/videos/7.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+<div class="scrolltext">
+
+    <h3>Stay Connect for Us</h3>
+    <h3>Music</h3>
+    <h3>News</h3>
+    <h3>Business</h3>
 </div>
 
-<div id="div">
+        <div class="videoannimation">
+           <video autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/822063732/rendition/1080p/file.mp4?loc=external&signature=79851f90dc501a79b69488c261bfb3c1db78d45a4eba6d058173e6f9576f6186"></video>
+        </div>
+      
+        </div>
 
-</div>
-
-
+       
     </div>
-   </div>
 
     <script src="Script.js"></script>
 </body>
+
 </html>

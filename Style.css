@@ -13,8 +13,8 @@ body {
 
 #page1 {
   min-height: 100vh;
-  width: 100%;
-  background-color: #efeae3;
+  min-width: 100%;
+  background-color: #edf7fc;
   position: relative;
 }
 
@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #b9e2f5;
 }
 #nav img {
   margin-left: 28px;
@@ -32,7 +33,7 @@ body {
   font-size: 1.5em;
   height: 90px;
   letter-spacing: 1px;
-  border-radius: 50%;
+  border-radius: 55%;
 }
 
 #navul {
@@ -46,7 +47,7 @@ body {
 #navul li {
   padding: 10px 20px;
   border: 1px solid #0000003c;
-  border-radius: 47%;
+  border-radius: 50px;
   font-weight: 500;
   color: #000000bb;
   transition: all ease 0.4s;
@@ -67,7 +68,7 @@ body {
   background-color: black;
   left: 0;
   bottom: -100%;
-  border-radius: 47%;
+  border-radius: 10%;
   transition: all ease 0.4s;
 }
 
@@ -87,56 +88,60 @@ body {
   color: #fff;
 }
 
-#dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
 }
 
-#program:hover #dropdown {
-  display: block;
+.carousel-item {
+  min-width: 100%;
 }
 
-#dropdown li {
-  padding: 10px 20px;
-  border: 1px solid #0000003c;
-  border-radius: 47%;
-  font-weight: 500;
-  color: #000000bb;
-  transition: all ease 0.4s;
+.carousel-video {
+  width: 100%;
+  height: auto;
 }
 
-#dropdown li:hover {
-  background-color: #ddd;
+.videoannimation {
+  position: relative;
+  border-radius: 20px;
+  margin-top: 1vw;
+  width: 100%;
+  overflow: hidden;
 }
 
-#sub-dropdown {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-#dropdown li:hover #sub-dropdown {
-  display: block;
+#moving-text::-webkit-scrollbar {
+    display: none;
 }
 
-#sub-dropdown li {
-  padding: 10px 20px;
-  border: 1px solid #0000003c;
-  border-radius: 47%;
-  font-weight: 500;
-  color: #000000bb;
-  transition: all ease 0.4s;
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-#sub-dropdown li:hover {
-  background-color: #ddd;
+#moving-text h1 {
+    font-size: 9vw;
+    /* background-color: lightblue; */
+    display: inline-block;
+}
+
+#gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
 }
 
 #loader {
