@@ -19,6 +19,7 @@ body {
 }
 
 #nav {
+  white-space: nowrap;
   width: 100%;
   height: 100px;
   display: flex;
@@ -87,6 +88,10 @@ body {
 #navul li:hover a {
   color: #fff;
 }
+#nav .navOpenBtn,
+#nav .navCloseBtn {
+  display: none;
+}
 
 .carousel {
   display: flex;
@@ -101,14 +106,6 @@ body {
 .carousel-video {
   width: 100%;
   height: auto;
-}
-
-.videoannimation {
-  position: relative;
-  border-radius: 20px;
-  margin-top: 1vw;
-  width: 100%;
-  overflow: hidden;
 }
 
 .scrolltext {
@@ -142,6 +139,74 @@ body {
   display: inline-block;
   background-color: #294b75;
   margin: 1vw 2vw;
+}
+
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 2vw 0;
+  position: relative;
+}
+
+.page2-bottom {
+  height: 80vh;
+  width: 100%;
+  padding: 1.5vw;
+  display: flex;
+
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+#page2-bottom h1,
+h5 {
+  font-size: 2vw;
+  width: 50%;
+  line-height: 4vw;
+}
+
+#bottom-part2 {
+  width: 50%;
+}
+
+#bottom-part2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#bottom-part2 p {
+  font-weight: 200;
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+#page2 #gooey {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  top: 58%;
+  left: 25%;
+  filter: blur(20px);
+  animation-name: gooey;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes gooey {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
 }
 
 @keyframes move {

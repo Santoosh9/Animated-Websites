@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Set an interval to switch videos (adjust the delay as needed)
-  setInterval(showNextVideo, 5000); // Switch every 4 seconds
+  setInterval(showNextVideo, 5000); // Switch every 5 seconds
 });
+
+
 
 loaderAnimation();
 showNextVideo();
