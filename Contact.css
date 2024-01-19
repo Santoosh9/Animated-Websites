@@ -5,6 +5,22 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.contactus {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+.contactus .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.contactus .title h2{
     
 }
